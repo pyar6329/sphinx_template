@@ -1,5 +1,5 @@
 ===============
-Sphinx templete
+Sphinx Template
 ===============
 
 Sphinxの雛形作成を自動化しました
