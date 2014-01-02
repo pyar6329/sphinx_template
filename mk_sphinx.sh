@@ -13,4 +13,9 @@ else
     sphinx-quickstart < tmp.txt
     rm -rf tmp.txt
     bash ../setting_sphinx.sh
+    echo "setting_sphinx.sh finish"
+    python ../contents_add.py
+    echo "contents_add.py finish"
+    make html
+    open build/html/index.html
 fi
