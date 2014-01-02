@@ -2,7 +2,7 @@
 y
 _
 project_name
-pyar6329
+author_name
 version_name
 release_name
 .rst
