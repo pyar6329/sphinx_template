@@ -4,7 +4,7 @@ Sphinx templete
 
 Sphinxの雛形作成を自動化しました
 
-precondition
+Precondition
 ============
 
 以下のものが必要です。
