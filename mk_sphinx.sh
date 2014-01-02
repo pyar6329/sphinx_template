@@ -5,7 +5,7 @@ YELLOW=$'\e[1;33;1m';
 COLOR_OFF=$'\e[0m';
 
 if [ ! "$#" = "1" ]; then
-    echo "$RED""please input app_name!""$COLOR_OFF"
+    echo "$RED""please input Project_Name !!!!!!!""$COLOR_OFF"
 else
     mkdir "$1"
     cd "$1"

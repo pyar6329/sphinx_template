@@ -1,14 +1,16 @@
 #!/bin/bash
-cat ./source/conf.py | sed -e "/^import/a import time" > ./source/conf.py
-cat ./source/conf.py | sed -e "/^extensions/c extensions = ['sphinxcontrib.blockdiag']" > ./source/conf.py
-cat ./source/conf.py | sed -e "/^version/c version = time.strftime('%Y.%m.%d')" > ./source/conf.py
-cat ./source/conf.py | sed -e "/^release/c release = time.strftime('%Y.%m.%d')" > ./source/conf.py
-cat ./source/conf.py | sed -e "/^#language/a language = 'ja'" > ./source/conf.py
-cat ./source/conf.py | sed -e "/^latex_elements/a \  'classoptions': ',openany,oneside'," > ./source/conf.py
-cat ./source/conf.py | sed -e "/^#'papersize'/c \  'papersize': 'a4paper'," > ./source/conf.py
-
+echo `pwd`
+sed -i -e "/^import/a import time" ./source/conf.py
+sed -i -e "/^extensions/c extensions = ['sphinxcontrib.blockdiag']" ./source/conf.py
+sed -i -e "/^version/c version = time.strftime('%Y.%m.%d')" ./source/conf.py
+sed -i -e "/^release/c release = time.strftime('%Y.%m.%d')" ./source/conf.py
+sed -i -e "/^#language/a language = 'ja'" ./source/conf.py
+sed -i -e "/^latex_elements/a \  'classoptions': ',openany,oneside'," ./source/conf.py
+sed -i -e "/^#'papersize'/c \  'papersize': 'a4paper'," ./source/conf.py
 
 cat >> ./source/conf.py << _EOF_
+
+# -- Options for Blockdiag output ------------------------------------------------
 
 # Fontpath for blockdiag
 blockdiag_fontpath = '/Library/Fonts/Osaka.ttf'
