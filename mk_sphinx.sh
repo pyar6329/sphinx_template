@@ -17,5 +17,4 @@ else
     python ../contents_add.py
     echo "contents_add.py finish"
     make html
-    open build/html/index.html
 fi
