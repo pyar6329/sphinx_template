@@ -10,6 +10,9 @@ sed -i -e "/^#'papersize'/c \  'papersize': 'a4paper'," ./source/conf.py
 
 cat >> ./source/conf.py << _EOF_
 
+# LaTeX docclass setting                                                                                                                                                   
+latex_docclass = {'manual': 'jsbook'} 
+
 # -- Options for Blockdiag output ------------------------------------------------
 
 # Fontpath for blockdiag

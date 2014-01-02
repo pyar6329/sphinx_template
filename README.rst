@@ -12,7 +12,7 @@ Precondition
 #. Sphinx
 #. gnu-sed (macの場合。alias sed="gnu-sed"とすること)
 #. LaTeX
-#. blockdiag
+#. Blockdiag
 
 
 
