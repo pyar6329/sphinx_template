@@ -23,7 +23,7 @@ Installation
 
     $ git clone https://github.com/pyar6329/sphinx_template.git
     $ cd sphinx_template
-    $ bash mk_sphinx.sh ``ProjectName``
+    $ bash mk_sphinx.sh 'Your Project Name'
 
 Scripts
 =======
